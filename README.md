@@ -64,6 +64,6 @@
 
 ### Миграции:
 
-5.	News.php – `News` table 
-6.	Log.php – `Log` table 
+1.	News.php – `News` table 
+2.	Log.php – `Log` table 
 
