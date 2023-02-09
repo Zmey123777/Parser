@@ -48,9 +48,10 @@
 
 1.	App/Http/Controllers/OutputController – методы для вывода новостей через API 
 
-    пример GET запроса с параметрами для вывода новостей через API :
+    примеры запросов GET для вывода новостей через API :
     
     ```
+    http://127.0.0.1:8000/api/news
     http://127.0.0.1:8000/api/news?columns=title,description,id&sort=id
     ```
 
