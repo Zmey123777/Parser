@@ -60,7 +60,7 @@
     Запуск Scheduler:
 
     ```
-    php artisan scheduler:work 
+    php artisan schedule:work 
     ```
 
 ### Миграции:
