@@ -25,7 +25,7 @@ class OutputController extends Controller
             $columnPresented = $request->query('columns');
             $columnArray = $columnPresented ? explode(',', $columnPresented) : '*';
             return response(['status' => 200 , 'data' => News::orderBy($sortColumn, 'DESC')
-                ->get($columnArray)]);
+                ->get($columnArray)])->header('Content-type', 'application/json; charset=UTF-8');
         } catch (\Exception | \Error $error ) {
             return response(['status' => 417, 'message' =>$error->getMessage()],417);
 
